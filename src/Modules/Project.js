@@ -70,8 +70,7 @@ export default function Project() {
       ],
     },
     {
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY23c3UXCGS-CXNb-SSvsP5DFoGGzzDhY4s6-EYInUtA&s",
+      image: "https://kinsta.com/wp-content/uploads/2018/05/what-is-dns.png",
       altText: "DNS Management Tool",
       title: "DNS Management Tool",
       description:
@@ -85,7 +84,7 @@ export default function Project() {
     },
     {
       image:
-        "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRPSWfTFhRH5i2L7R8T4VnZak5ozoCQ6yKoVE6ENY1stxm8OkMK",
+        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
       altText: "STAAR Exports & Imports",
       title: "STAAR Exports & Imports (Freelance)",
       description:
@@ -94,7 +93,7 @@ export default function Project() {
     },
     {
       image:
-        "https://media.istockphoto.com/id/1290071290/vector/rental-car-icon.jpg?s=612x612&w=0&k=20&c=q4EsvU3jJJYbcZTJ1EzKh6c-Dvy39HagvAUgTCRK9bE=",
+        "https://www.shutterstock.com/image-vector/car-sharing-online-application-concept-600nw-1898241121.jpg",
       altText: "Car Rental Application",
       title: "Car Rental Application",
       description:
@@ -118,7 +117,7 @@ export default function Project() {
 
     {
       image:
-        "https://img.freepik.com/free-vector/tiny-doctors-patients-near-hospital-flat-vector-illustration-therapist-face-mask-saying-goodbye-cured-people-near-medical-building-ambulance-emergency-clinic-concept_74855-25338.jpg",
+        "https://www.emedstore.in/images/servicepage/hospital-app-website-development.png?version=1.1",
       altText: "Hospital Management Application",
       title: "Hospital Management Application",
       description:
@@ -159,7 +158,7 @@ export default function Project() {
   return (
     <div className="project-container">
       <div className="Prow1" id="pro">
-        <h2 style={{ marginLeft: "-25px" }}>Projects</h2>
+        <h2 style={{ marginLeft: "-10px" }}>Projects</h2>
       </div>
       <div className="project-content">
         {projects.map((project, index) => (

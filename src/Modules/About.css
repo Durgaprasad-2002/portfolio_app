@@ -30,7 +30,6 @@
   flex: 1;
   margin: 7px;
   width: fit-content;
-  background-color: #1c1b23;
   padding: 10px;
   border-radius: 15px;
   font-family: "Mulish", sans-serif;
@@ -80,11 +79,11 @@
   width: auto;
   min-width: 300px;
   margin: 0 5px;
-  padding: 10px;
+  padding: 15px 10px;
 }
 
 .bio-container p {
-  font-size: 17.5px;
+  font-size: 16px;
   color: rgb(244, 241, 241);
   text-align: left;
 }
@@ -97,13 +96,14 @@
 
 .section-title {
   font-family: "Mulish", sans-serif;
-  text-decoration: underline rgb(104, 154, 230) 1px;
-  text-underline-offset: 5px;
   margin-left: 15px;
   font-weight: 500;
   color: white;
   text-align: left;
-  font-size: 29px;
+  font-size: 25px;
+  width: fit-content;
+  border-left: 2px solid rgb(81, 62, 202);
+  padding-left: 5px;
 }
 
 .SkillCardItems {

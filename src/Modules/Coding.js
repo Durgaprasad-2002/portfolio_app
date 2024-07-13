@@ -17,11 +17,6 @@ export default function Coding() {
       >
         <div className="Prow1">
           <h2>Coding Profiles</h2>
-          <p>
-            you can see the metrics of my Leetcode, GeeksForGeeks, Github
-            account and a few other platform stats, where I share my projects,
-            knowledge and practice.
-          </p>
         </div>
         <div className="content-box">
           <div className="stat-card">

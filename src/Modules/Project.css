@@ -10,14 +10,14 @@ body {
 
 .Prow1 h2 {
   font-family: "Mulish", sans-serif;
-  text-decoration: underline rgb(104, 154, 230) 1px;
-  text-underline-offset: 5px;
   text-overflow: clip;
   margin-bottom: 20px;
   font-weight: 500;
   color: white;
   text-align: left;
-  font-size: 29px;
+  font-size: 25px;
+  border-left: 2px solid rgb(81, 62, 202);
+  padding-left: 5px;
 }
 
 .project-container {

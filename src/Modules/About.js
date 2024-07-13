@@ -4,6 +4,7 @@ import "./About.css";
 import Resume from "./Images/VeeraVenkataSaiDurgaPrasadThota_Resume.pdf";
 import img from "./Images/20MH1A04C3.jpg";
 import { useEffect } from "react";
+import { MdDownload } from "react-icons/md";
 
 const About = () => {
   const roles = ["MERN Stack Developer", "Programmer", "Designer"];
@@ -50,41 +51,30 @@ const About = () => {
                     loading="lazy"
                   />
                 </div>
-                <div className="img-card-inner">
-                  <h3>Durga Prasad</h3>
-                  <h6>MERN Stack Developer</h6>
-                  <h6>
-                    Helping with:
-                    <br />
-                    <br />
-                    <span>React.Js</span>
-                    <span>Node.Js</span>
-                    <span>MongoDB</span>
-                  </h6>
-
-                  <a href="tel:+91-9177943677">
-                    <button>Contact</button>
-                  </a>
-                  <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
-                    <button>Download Resume</button>
-                  </a>
-                </div>
               </div>
             </Suspense>
           </div>
           <div className="bio-container">
             <p>
-              Hi, I'm <span>Durga Prasad</span>, a{" "}
-              <span className="role">{roles[0]}</span> and design enthusiast. I
-              have been working as a web developer for the past year, mainly
-              focused on <span>web technologies</span>.
+              <b>
+                Hi, I'm Durga Prasad, a MERN Stack Developer and Design
+                enthusiast
+              </b>
               <br />
-              <br />I feel comfortable working with technologies like Java,
-              JavaScript, React, Node.js, MongoDB, MySql and many other
-              technologies in the web ecosystem. I love <span>programming</span>
-              , design, user interfaces, and open-source, and that's what I'm
-              passionate about.
               <br />
+              I have been working as a web developer for the past year, focusing
+              mainly on Web Technologies. I feel comfortable working with
+              technologies like Java, JavaScript, React, Node.js, MongoDB,
+              MySQL, and many others in the web ecosystem. I am passionate about
+              programming, design, user interfaces, and open-source projects. As
+              a fresher, I bring a fresh perspective and a strong commitment to
+              continuous learning and improvement.
+              <br />
+              <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
+                <button className="btn btn-secondary btn-md me-2">
+                  Resume <MdDownload />{" "}
+                </button>
+              </a>
               <a
                 href="https://www.linkedin.com/in/durgaprasadthota/"
                 target="new"
@@ -101,8 +91,10 @@ const About = () => {
         </div>
 
         <div className="container-fluid">
-          <h2 className="section-title">Education</h2>
-          <br />
+          <h2 className="section-title" id="section-head">
+            Education
+          </h2>
+
           <div className="row">
             <div className="col-md-4">
               <div className="edu-card">
@@ -145,7 +137,6 @@ const About = () => {
         <br />
         <div className="container-fluid" id="skill">
           <h2 className="section-title">Skills</h2>
-          <br />
           <div className="SkillCardItems">
             <div className="skill-card">
               <h4>Frontend Technologies</h4>
@@ -153,6 +144,7 @@ const About = () => {
                 <h5>HTML</h5>
                 <h5>CSS</h5>
                 <h5>Bootstrap</h5>
+                <h5>ReactJs</h5>
               </div>
             </div>
 
@@ -165,17 +157,11 @@ const About = () => {
             </div>
 
             <div className="skill-card">
-              <h4>Frontend Frameworks</h4>
-              <div className="skill-wrapper">
-                <h5>ReactJs</h5>
-              </div>
-            </div>
-
-            <div className="skill-card">
-              <h4>Backend Frameworks</h4>
+              <h4>Backend</h4>
               <div className="skill-wrapper">
                 <h5>ExpressJs</h5>
                 <h5>NodeJs</h5>
+                <h5>Embedded JavaScript Template</h5>
               </div>
             </div>
 
@@ -200,7 +186,7 @@ const About = () => {
                 <h5>Git</h5>
                 <h5>Postman</h5>
                 <h5>Redux Toolkit</h5>
-                <h5>Embedded JavaScript Template (SSR)</h5>
+
                 <h5>Docker</h5>
               </div>
             </div>
