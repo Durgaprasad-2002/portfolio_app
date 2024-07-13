@@ -62,12 +62,10 @@ const About = () => {
               </b>
               <br />
               <br />
-              I have been working as a web developer for the past year, focusing
-              mainly on Web Technologies. I feel comfortable working with
-              technologies like Java, JavaScript, React, Node.js, MongoDB,
-              MySQL, and many others in the web ecosystem. I am passionate about
-              programming, design, user interfaces, and open-source projects. As
-              a fresher, I bring a fresh perspective and a strong commitment to
+              With a year of web development experience, I'm skilled in Java,
+              JavaScript, React, Node.js, MongoDB, and MySQL. I'm passionate
+              about programming, UI design, and open-source projects. As a
+              fresher, I bring a fresh perspective and a strong commitment to
               continuous learning and improvement.
               <br />
               <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
