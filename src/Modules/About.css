@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+.about-container {
+  width: 100%;
+  background-color: #14131a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+#profile-img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  min-width: 250px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.img-card {
+  flex: 1;
+  margin: 7px;
+  width: fit-content;
+  background-color: #1c1b23;
+  padding: 10px;
+  border-radius: 15px;
+  font-family: "Mulish", sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.img-card-inner {
+  flex: 1;
+}
+
+.img-card h3,
+.img-card h6 {
+  color: white;
+  padding: 5px;
+}
+
+.img-card span {
+  background-color: white;
+  color: black;
+  margin-right: 5px;
+  padding: 4px 7px;
+  font-size: 13px;
+  border-radius: 5px;
+  min-width: fit-content !important;
+}
+
+.img-card button {
+  background-color: rgb(81, 62, 202);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 2px 17px;
+}
+
+.img-card button:hover {
+  background-color: rgb(68, 48, 200);
+}
+
+.bio-container {
+  flex: 1;
+  width: auto;
+  min-width: 300px;
+  margin: 0 5px;
+  padding: 10px;
+}
+
+.bio-container p {
+  font-size: 17.5px;
+  color: rgb(244, 241, 241);
+  text-align: left;
+}
+
+.bio-container span {
+  color: rgb(104, 154, 230);
+  font-weight: 450;
+  text-transform: capitalize;
+}
+
+.section-title {
+  font-family: "Mulish", sans-serif;
+  text-decoration: underline rgb(104, 154, 230) 1px;
+  text-underline-offset: 5px;
+  margin-left: 15px;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+  font-size: 29px;
+}
+
+.SkillCardItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.edu-card,
+.skill-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  background-color: #1c1b23;
+  padding: 10px 5px 10px 20px;
+  margin: 5px;
+  border-radius: 15px;
+  min-width: 250px;
+}
+
+.skill-card {
+  transition: all 0.5s ease-in;
+  transform: scale(0.7);
+  opacity: 0;
+}
+.group {
+  font-size: 14px;
+}
+.edu-card h4,
+.skill-card h4 {
+  font-family: "Mulish", sans-serif;
+  font-size: 20px;
+}
+
+.edu-card h5,
+.skill-card h5 {
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.edu-card h6 {
+  font-size: 15px;
+  width: 100%;
+  font-weight: 300;
+}
+
+.edu-card h6 span {
+  float: right;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-wrapper h5 {
+  background-color: #14131a;
+  border: 1px solid lightgray;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 7px 12px;
+  border-radius: 5px;
+  margin: 8px 8px 8px 0;
+}
+
+.skill-wrapper h5:nth-child(1) {
+  border-color: rgb(234, 96, 96);
+}
+
+.skill-wrapper h5:nth-child(2) {
+  border-color: slateblue;
+}
+
+.skill-wrapper h5:nth-child(3) {
+  border-color: lightgreen;
+}
+
+.skill-wrapper h5:nth-child(4) {
+  border-color: yellow;
+}

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
+
+/* .Outer-Nav {
+  position: fixed;
+  top: 0;
+  display: block;
+  width: 100%;
+  z-index: 100;
+  will-change: top;
+  transition: all 0.3s ease-in;
+} */
+
+#nav {
+  z-index: 20;
+  background: #1c1b23;
+  margin: 0px 0px 5px 0px;
+  padding: 10px 0px;
+}
+
+#basic-nav-dropdown {
+  color: #b3b3b3;
+}
+.me-auto {
+  font-family: "Mulish", sans-serif;
+  color: lightgray;
+  border-radius: 30px;
+  padding: 0px 20px 0px 20px;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  #nav {
+    z-index: 20;
+    background: #030304;
+    margin: 0px 0px 5px 0px;
+    padding: 10px 0px;
+  }
+
+  .me-auto {
+    border: none;
+    display: flex;
+    align-items: center;
+  }
+}
+.me-auto a {
+  width: 100%;
+  text-transform: capitalize;
+  color: #b3b3b3;
+  width: fit-content;
+  transition: all 0.2s ease;
+}
+
+#div {
+  background-color: white;
+  height: 5px;
+  width: 0%;
+  transform: width 0.3s linear;
+}
+
+.me-auto a:active #div {
+  color: white;
+  width: 100%;
+}
+.me-auto a:link {
+  color: lightgray;
+}
+
+.me-auto a:hover {
+  color: slateblue;
+}
+
+#div {
+  display: none;
+  transition: all 0.8s;
+  border-radius: 5px;
+  width: 10px;
+  max-width: 50px;
+  height: 2px;
+  background-color: #b3b3b3;
+}
+
+#d1 {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#d1 {
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 50%;
+}
+#d2 {
+  margin: 5px;
+  width: 25px;
+  height: 25px;
+  background-color: slateblue;
+  border-radius: 10%;
+}
+
+.outer {
+  width: fit-content;
+  height: fit-content;
+  background-color: #030304;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: relative;
+  padding: 5px;
+}
+
+.inner {
+  border-radius: 20px;
+  height: 2px !important;
+  width: 30px;
+  background-color: white;
+  margin: 5px 0px 4px 0px;
+  will-change: rotate;
+  transition: all 0.3s ease;
+}

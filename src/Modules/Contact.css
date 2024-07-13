@@ -1,0 +1,79 @@
+#Footer {
+  background-color: #1c1b23;
+  /* border: 1px solid #2d2d2d; */
+  margin: 10px 5px 20px 5px;
+  padding: 15px 0px 15px 0px;
+  border-radius: 10px;
+}
+
+.digiAccounts {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  color: #14131a;
+  text-align: center;
+  height: 55px;
+}
+
+.accs {
+  color: white;
+  cursor: pointer;
+  font-size: 23px;
+  width: 35px;
+  margin: 1px 10px 1px 10px;
+  transition: all 0.3s ease;
+}
+.accs:hover {
+  font-size: 29px;
+}
+
+.copy {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 15px 0px 0px 10px;
+  font-size: 14px;
+}
+
+.back-btn {
+  border: 1.3px solid white;
+  background: none;
+  font-weight: 350;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 4px;
+  margin-left: 15px;
+  padding: 3px 14px 3px 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-btn:hover {
+  background: white;
+  color: #14131a;
+}
+@media (max-width: 900px) {
+  .accs {
+    font-size: 27px;
+    margin: 1px 15px 1px 15px;
+  }
+  .digiAccounts {
+    justify-content: center;
+  }
+  .copy {
+    justify-content: center;
+    margin: 0px;
+    padding: 15px 0px 15px 0px;
+  }
+}
+
+.copy b {
+  border: 1.3px solid white;
+  color: white;
+  border-radius: 4px;
+  font-weight: 350;
+  text-transform: uppercase;
+  margin-left: 5px;
+  padding: 3px 14px 3px 14px;
+}
