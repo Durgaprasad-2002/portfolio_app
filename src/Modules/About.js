@@ -56,16 +56,14 @@ const About = () => {
           </div>
           <div className="bio-container">
             <p>
-              <b>
-                Hi, I'm Durga Prasad, a MERN Stack Developer and Design
-                enthusiast
-              </b>
+              <h3> I'm Durga Prasad,</h3>{" "}
+              <span className="light">
+                MERN Stack Developer and Design enthusiast
+              </span>
               <br />
               <br />
-              With a year of web development experience, I'm skilled in Java,
-              JavaScript, React, Node.js, MongoDB, and MySQL. I'm passionate
-              about programming, UI design, and open-source projects. As a
-              fresher, I bring a fresh perspective and a strong commitment to
+              Passionate about web development, UI design, Programming projects.
+              As a fresher, I bring a unique perspective and a commitment to
               continuous learning and improvement.
               <br />
               <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">

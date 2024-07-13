@@ -74,6 +74,11 @@
   background-color: rgb(68, 48, 200);
 }
 
+.light {
+  font-weight: lighter !important;
+  font-size: medium;
+}
+
 .bio-container {
   flex: 1;
   width: auto;
@@ -83,7 +88,7 @@
 }
 
 .bio-container p {
-  font-size: 16px;
+  font-size: 17px;
   color: rgb(244, 241, 241);
   text-align: left;
 }
