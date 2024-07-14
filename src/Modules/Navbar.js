@@ -82,19 +82,19 @@ function NAV() {
                 <span id="div"></span>
               </Nav.Link>
 
-              <Nav.Link id="env" href="#pro">
+              <Nav.Link id="env" href="#projects">
                 Projects
                 <br />
                 <span id="div"></span>
               </Nav.Link>
 
-              <Nav.Link id="env" href="#code">
+              <Nav.Link id="env" href="#coding-profiles">
                 coding profiles
                 <br />
                 <span id="div"></span>
               </Nav.Link>
 
-              <Nav.Link id="env" href="#skill">
+              <Nav.Link id="env" href="#skills">
                 Skills
                 <br />
                 <span id="div"></span>

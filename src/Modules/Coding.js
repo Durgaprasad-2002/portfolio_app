@@ -12,8 +12,8 @@ export default function Coding() {
     <>
       {/* <Navbar_ /> */}
       <div
-        id="code"
-        style={{ marginTop: "50px", color: "white", background: "#14131a" }}
+        id="coding-profiles"
+        style={{ marginTop: "30px", color: "white", background: "#14131a" }}
       >
         <div className="Prow1">
           <h2>Coding Profiles</h2>
