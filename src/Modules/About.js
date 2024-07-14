@@ -62,8 +62,8 @@ const About = () => {
               </span>
               <br />
               <br />
-              Passionate about web development, UI design, Programming projects.
-              As a fresher, I bring a unique perspective and a commitment to
+              Passionate about web development, UI design, Programming. As a
+              fresher, I bring a unique perspective and a commitment to
               continuous learning and improvement.
               <br />
               <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">

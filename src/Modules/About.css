@@ -21,7 +21,7 @@
   object-fit: cover;
   object-position: top;
   width: 100%;
-  min-width: 300px;
+  min-width: 310px;
   height: 250px;
   border-radius: 10px;
 }
