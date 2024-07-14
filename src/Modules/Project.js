@@ -158,7 +158,7 @@ export default function Project() {
   return (
     <div className="project-container">
       <div className="Prow1" id="projects">
-        <h2 style={{ marginLeft: "-10px" }}>Projects</h2>
+        <h2 style={{ marginLeft: "-15px" }}>Projects</h2>
       </div>
       <div className="project-content">
         {projects.map((project, index) => (

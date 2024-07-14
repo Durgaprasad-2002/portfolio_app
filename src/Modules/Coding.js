@@ -17,6 +17,12 @@ export default function Coding() {
       >
         <div className="Prow1">
           <h2>Coding Profiles</h2>
+          <p>
+            I am an enthusiastic and dedicated developer with a strong passion
+            for problem-solving and continuous learning. I have actively engaged
+            in various coding platforms and contributed to multiple repositories
+            on GitHub.
+          </p>
         </div>
         <div className="content-box">
           <div className="stat-card">

@@ -24,6 +24,7 @@
   min-width: 310px;
   height: 250px;
   border-radius: 10px;
+  border: 5px solid#1c1b23;
 }
 
 .img-card {

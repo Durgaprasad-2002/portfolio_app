@@ -17,6 +17,7 @@
   border-radius: 30px;
   padding: 10px 15px 0px 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 .stat-card:active {
   background-color: #2d284b;
@@ -54,6 +55,7 @@ a {
   width: fit-content;
   height: fit-content;
   font-weight: bold;
+  transition: all 0.3s ease;
 }
 .link {
   color: white;
@@ -65,5 +67,5 @@ a {
 }
 
 .stat-card:hover a {
-  color: steelblue;
+  color: rgb(242, 49, 49);
 }
