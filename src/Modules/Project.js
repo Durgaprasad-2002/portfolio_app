@@ -92,6 +92,16 @@ export default function Project() {
       links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
     },
     {
+      image: "https://blog.dktcdn.net/files/blog-la-gi-3.png",
+      altText: "Blog Website",
+      title: "Blog Website",
+      description:
+        "This project is a full-stack blog application with user authentication, blog creation, and commenting features, built using Express.js and MongoDB.",
+      links: [
+        { url: "https://blogify-app-kqxx.onrender.com/", text: "Try it!" },
+      ],
+    },
+    {
       image:
         "https://www.shutterstock.com/image-vector/car-sharing-online-application-concept-600nw-1898241121.jpg",
       altText: "Car Rental Application",
