@@ -42,7 +42,6 @@ body {
   /* width: 23%; */
   display: flex;
   flex-direction: column;
-  max-width: 450px;
   min-width: 290px;
   padding: 10px;
   transition: all 0.5s ease-in;
@@ -53,12 +52,13 @@ body {
 
 .project-card img {
   background: white;
-  width: 100%;
+  width: auto;
+  aspect-ratio: 16/9;
   max-height: 150px;
-  min-height: 150px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   object-fit: cover;
+  object-position: center;
 }
 
 .card-body {

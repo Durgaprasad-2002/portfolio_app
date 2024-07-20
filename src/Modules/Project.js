@@ -82,14 +82,15 @@ export default function Project() {
         },
       ],
     },
+
     {
       image:
-        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
-      altText: "STAAR Exports & Imports",
-      title: "STAAR Exports & Imports (Freelance)",
+        "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/01/url-shortener.jpg",
+      altText: "TinyIt",
+      title: "TinyIt",
       description:
-        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
-      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
+        "Created TinyIt, a tool to convert long URLs into short, shareable links with aliases and analytics.",
+      links: [{ url: "https://tinyit.vercel.app/", text: "Try it!" }],
     },
     {
       image: "https://blog.dktcdn.net/files/blog-la-gi-3.png",
@@ -100,6 +101,15 @@ export default function Project() {
       links: [
         { url: "https://blogify-app-kqxx.onrender.com/", text: "Try it!" },
       ],
+    },
+    {
+      image:
+        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
+      altText: "STAAR Exports & Imports",
+      title: "STAAR Exports & Imports (Freelance)",
+      description:
+        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
+      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
     },
     {
       image:
