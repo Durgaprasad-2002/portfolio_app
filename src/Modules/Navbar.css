@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Mulish&display=swap");
 
-/* .Outer-Nav {
-  position: fixed;
-  top: 0;
-  display: block;
-  width: 100%;
-  z-index: 100;
-  will-change: top;
-  transition: all 0.3s ease-in;
-} */
-
 #nav {
   z-index: 20;
   background: #1c1b23;

@@ -16,11 +16,14 @@ function App() {
     <Suspense fallback={<Loader />}>
       <div className="App" id="#">
         <Navbar_ />
-        <About />
-        <Coding />
-        <br />
-        <Project />
-        <Contact />
+        <div className="Outer-APP">
+          <div style={{ maxWidth: "1400px" }}>
+            <About />
+            <Coding />
+            <Project />
+            <Contact />
+          </div>
+        </div>
       </div>
     </Suspense>
   );
