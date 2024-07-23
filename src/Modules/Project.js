@@ -132,7 +132,7 @@ export default function Project() {
       title: "Legis Code (Freelance)",
       description:
         "A comprehensive platform for legal practitioners, featuring a categorized repository of laws.",
-      links: [{ url: "https://hasiniworld.in/", text: "Try it!" }],
+      links: [{ url: "https://legiscode.vercel.app/", text: "Try it!" }],
     },
 
     {
