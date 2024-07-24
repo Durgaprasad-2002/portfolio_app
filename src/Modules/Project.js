@@ -64,7 +64,7 @@ export default function Project() {
         "Developed dynamic React-based web app integrating with Google Calendar API for CRUD operations, featuring secure Google Auth login.",
       links: [
         {
-          url: "https://event-app-durgaprasad-2002s-projects.vercel.app/",
+          url: "https://eventmanage-app.vercel.app/",
           text: "Try it!",
         },
       ],
@@ -102,15 +102,7 @@ export default function Project() {
         { url: "https://blogify-app-kqxx.onrender.com/", text: "Try it!" },
       ],
     },
-    {
-      image:
-        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
-      altText: "STAAR Exports & Imports",
-      title: "STAAR Exports & Imports (Freelance)",
-      description:
-        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
-      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
-    },
+
     {
       image:
         "https://www.shutterstock.com/image-vector/car-sharing-online-application-concept-600nw-1898241121.jpg",
@@ -124,6 +116,15 @@ export default function Project() {
           text: "Try it!",
         },
       ],
+    },
+    {
+      image:
+        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
+      altText: "STAAR Exports & Imports",
+      title: "STAAR Exports & Imports (Freelance)",
+      description:
+        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
+      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
     },
     {
       image:
