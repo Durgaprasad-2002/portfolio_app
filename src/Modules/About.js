@@ -62,7 +62,7 @@ const About = () => {
               </span>
               <br />
               <br />
-              Passionate about web development, UI design, Programming. As a
+              Passionate about Web Development, UI design, Programming. As a
               fresher, I bring a unique perspective and a commitment to
               continuous learning and improvement.
               <br />
