@@ -2,7 +2,7 @@ import "./App.css";
 
 import Loader from "./Loader";
 
-import { Suspense, useState } from "react";
+import { Suspense} from "react";
 import { lazy } from "react";
 
 const Navbar_ = lazy(() => import("./Modules/Navbar"));

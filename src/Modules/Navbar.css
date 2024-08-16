@@ -3,18 +3,19 @@
 #nav {
   z-index: 20;
   background: #1c1b23;
-  margin: 0px 0px 5px 0px;
-  padding: 10px 0px;
+  margin: 0 0 5px 0;
+  padding: 10px 0;
 }
 
 #basic-nav-dropdown {
   color: #b3b3b3;
 }
+
 .me-auto {
   font-family: "Mulish", sans-serif;
   color: lightgray;
   border-radius: 30px;
-  padding: 0px 20px 0px 20px;
+  padding: 0 20px;
 }
 
 .navbar-nav .nav-link.active,
@@ -26,8 +27,8 @@
   #nav {
     z-index: 20;
     background: #030304;
-    margin: 0px 0px 5px 0px;
-    padding: 10px 0px;
+    margin: 0 0 5px 0;
+    padding: 10px 0;
   }
 
   .me-auto {
@@ -36,32 +37,51 @@
     align-items: center;
   }
 }
+
 .me-auto a {
-  width: 100%;
   text-transform: capitalize;
   color: #b3b3b3;
-  width: fit-content;
   transition: all 0.2s ease;
+  position: relative;
+  width: max-content;
 }
 
-#div {
-  background-color: white;
-  height: 5px;
-  width: 0%;
-  transform: width 0.3s linear;
-}
-
-.me-auto a:active #div {
-  color: white;
-  width: 100%;
-}
-.me-auto a:link {
+.me-auto a:link,
+.me-auto a:visited {
   color: lightgray;
 }
 
 .me-auto a:hover {
   color: slateblue;
 }
+
+.me-auto a::before,
+.me-auto a::after {
+  content: "";
+  position: absolute;
+  height: 1.3px;
+  background: white;
+  z-index: 100;
+  transition: width 0.3s ease;
+}
+
+.me-auto a::before {
+  width: 0;
+}
+
+.me-auto a::after {
+  width: 0;
+}
+
+.me-auto a:hover::before {
+  width: 90%;
+}
+
+.me-auto a:hover::after {
+  width: 90%;
+}
+
+
 
 #div {
   display: none;
@@ -74,30 +94,25 @@
 }
 
 #d1 {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  border-radius: 50%;
-}
-
-#brand {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-#d1 {
   margin: 5px;
   width: 25px;
   height: 25px;
   background-color: white;
   border-radius: 50%;
 }
+
 #d2 {
   margin: 5px;
   width: 25px;
   height: 25px;
   background-color: slateblue;
   border-radius: 10%;
+}
+
+#brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .outer {
@@ -116,7 +131,7 @@
   height: 2px !important;
   width: 30px;
   background-color: white;
-  margin: 5px 0px 4px 0px;
+  margin: 5px 0;
   will-change: rotate;
   transition: all 0.3s ease;
 }
