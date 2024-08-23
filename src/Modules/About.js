@@ -144,20 +144,14 @@ const About = () => {
               </div>
             </div>
 
-            <div className="skill-card">
-              <h4>Databases</h4>
-              <div className="skill-wrapper">
-                <h5>MongoDB</h5>
-                <h5>MySql</h5>
-              </div>
-            </div>
+            
 
             <div className="skill-card">
               <h4>Backend</h4>
               <div className="skill-wrapper">
                 <h5>ExpressJs</h5>
                 <h5>NodeJs</h5>
-                <h5>Embedded JavaScript Template</h5>
+                <h5>EJS</h5>
               </div>
             </div>
 
@@ -170,10 +164,18 @@ const About = () => {
               </div>
             </div>
 
-            <div className="skill-card">
+            {/* <div className="skill-card">
               <h4>Productivity Software</h4>
               <div className="skill-wrapper">
                 <h5>Microsoft Office (Word, Excel, PowerPoint)</h5>
+              </div>
+            </div> */}
+
+            <div className="skill-card">
+              <h4>Databases</h4>
+              <div className="skill-wrapper">
+                <h5>MongoDB</h5>
+                <h5>MySql</h5>
               </div>
             </div>
             <div className="skill-card">
