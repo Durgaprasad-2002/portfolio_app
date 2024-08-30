@@ -121,7 +121,7 @@ export default function Project() {
       image:
         "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
       altText: "STAAR Exports & Imports",
-      title: "STAAR Exports & Imports (Freelance)",
+      title: "STAAR Exports & Imports ",
       description:
         "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
       links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
@@ -130,7 +130,7 @@ export default function Project() {
       image:
         "https://lawacademybhopal.com/wp-content/uploads/2024/02/mba-after-law-llb.jpg",
       altText: "Legis Code",
-      title: "Legis Code (Freelance)",
+      title: "Legis Code ",
       description:
         "A comprehensive platform for legal practitioners, featuring a categorized repository of laws.",
       links: [{ url: "https://legiscode.vercel.app/", text: "Try it!" }],
@@ -140,7 +140,7 @@ export default function Project() {
       image:
         "https://www.emedstore.in/images/servicepage/hospital-app-website-development.png?version=1.1",
       altText: "Hospital Management Application",
-      title: "Hospital Management Application",
+      title: "Hospital Management",
       description:
         "Developed using Bootstrap, JavaScript, React Js, Node Js, MongoDB Cluster.",
       links: [

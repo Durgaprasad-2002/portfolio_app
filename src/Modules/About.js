@@ -135,7 +135,7 @@ const About = () => {
           <h2 className="section-title">Skills</h2>
           <div className="SkillCardItems">
             <div className="skill-card">
-              <h4>Frontend Technologies</h4>
+              <h4>Frontend</h4>
               <div className="skill-wrapper">
                 <h5>HTML</h5>
                 <h5>CSS</h5>
@@ -160,7 +160,7 @@ const About = () => {
               <div className="skill-wrapper">
                 <h5>JavaScript</h5>
                 <h5>Java</h5>
-                <h5>C++</h5>
+                {/* <h5>C++</h5> */}
               </div>
             </div>
 

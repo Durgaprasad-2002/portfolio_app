@@ -9,3 +9,32 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.loader-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.roater{
+
+  position: relative;
+  border: 3px solid white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  will-change: auto;
+  animation: rotate 1s ease forwards infinite;
+}
+
+.loading-stat{
+  color: white;
+}
+
+@keyframes rotate {
+  from{ transform: rotate(0deg);}
+  to{ transform: rotate(360deg);}
+}
