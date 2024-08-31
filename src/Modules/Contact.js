@@ -50,7 +50,7 @@ export default function Contact() {
           <div className="row">
             <div className="col-md-6">
               <p className="copy">
-                <b> My Social Information</b>
+                <b> My Social Info</b>
                 
               </p>
             </div>
