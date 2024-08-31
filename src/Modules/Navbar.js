@@ -59,7 +59,7 @@ function NAV() {
               <div
                 className="inner"
                 style={{
-                  width: "17px",
+                  width: "21px",
                   height: "1.5px",
                   opacity: `${toggle ? "0" : "1"}`,
                   marginTop: "-0.5px",
@@ -68,8 +68,9 @@ function NAV() {
               <div
                 className="inner"
                 style={{
+                  width: `${toggle ? "30px" : "12px"}`,
                   rotate: `${toggle ? "-45deg" : "0deg"}`,
-                  marginTop: `${toggle ? "-12px" : "0px"}`,
+                  marginTop: `${toggle ? "-13px" : "0px"}`,
                 }}
               ></div>
             </div>

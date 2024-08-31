@@ -9,23 +9,49 @@ import {
   BsWhatsapp,
 } from "react-icons/bs";
 import { FiMail } from "react-icons/fi";
+import { useState,useEffect } from "react";
 
 export default function Contact() {
+
+  const [show, setShow] = useState(false);
+  const [prevScroll, setPrevScroll] = useState(0);
+
+  const ScrollTrigger = () => {
+    let scrollHeight = document.documentElement.scrollTop;
+
+    if (scrollHeight > prevScroll && scrollHeight > 200) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+
+    setPrevScroll(scrollHeight);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', ScrollTrigger);
+
+    return () => {
+      window.removeEventListener('scroll', ScrollTrigger);
+    };
+  }, [prevScroll]);
+
   function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
   return (
     <>
+      <button className="back-btn" onClick={topFunction} style={{display:`${show?'block':'none'}`}}>
+                  ↿ Top 
+      </button>
       <div className="container-fluid">
         <div id="Footer">
           <div className="row">
             <div className="col-md-6">
               <p className="copy">
-                <b> My Social Info</b>
-                <button className="back-btn" onClick={topFunction}>
-                  Back to Top
-                </button>
+                <b> My Social Information</b>
+                
               </p>
             </div>
             <div className="col-md-6">
