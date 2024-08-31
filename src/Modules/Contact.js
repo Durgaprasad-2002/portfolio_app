@@ -16,25 +16,25 @@ export default function Contact() {
   const [show, setShow] = useState(false);
   const [prevScroll, setPrevScroll] = useState(0);
 
-  const ScrollTrigger = () => {
-    let scrollHeight = document.documentElement.scrollTop;
+  // const ScrollTrigger = () => {
+  //   let scrollHeight = document.documentElement.scrollTop;
 
-    if (scrollHeight > prevScroll && scrollHeight > 200) {
-      setShow(true);
-    } else {
-      setShow(false);
-    }
+  //   if (scrollHeight > prevScroll && scrollHeight > 200) {
+  //     setShow(true);
+  //   } else {
+  //     setShow(false);
+  //   }
 
-    setPrevScroll(scrollHeight);
-  };
+  //   setPrevScroll(scrollHeight);
+  // };
 
-  useEffect(() => {
-    window.addEventListener('scroll', ScrollTrigger);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', ScrollTrigger);
 
-    return () => {
-      window.removeEventListener('scroll', ScrollTrigger);
-    };
-  }, [prevScroll]);
+  //   return () => {
+  //     window.removeEventListener('scroll', ScrollTrigger);
+  //   };
+  // }, [prevScroll]);
 
   function topFunction() {
     document.body.scrollTop = 0;
