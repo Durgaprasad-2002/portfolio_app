@@ -22,11 +22,11 @@ function App() {
           <div style={{ maxWidth: "1400px" }}>
             <About />
             <Coding />
-         
             <Project />
             <Contact />
           </div>
         </div>
+        {/* <Loader /> */}
       </div>
     </Suspense>
   );

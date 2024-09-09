@@ -8,9 +8,9 @@ export default function Loader() {
 
       </div> 
       
-      <p className='loading-stat'>
+      {/* <p className='loading-stat'>
         Loading...
-      </p>
+      </p> */}
     </div>
   )
 }
