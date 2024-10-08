@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
-import Resume from "./Images/VeeraVenkataSaiDurgaPrasadThota_Resume.pdf";
+import Resume from "./Images/VeeraVenkataSaiDurgaPrasadThota_Resume_updated.pdf";
 import img from "./Images/20MH1A04C3.jpg";
 import { useEffect } from "react";
 import { MdDownload } from "react-icons/md";
@@ -144,11 +144,10 @@ const About = () => {
               </div>
             </div>
 
-            
-
             <div className="skill-card">
               <h4>Backend</h4>
               <div className="skill-wrapper">
+                <h5>Spring</h5>
                 <h5>ExpressJs</h5>
                 <h5>NodeJs</h5>
                 <h5>EJS</h5>

@@ -29,7 +29,7 @@
   transition: all 0.2s ease;
   position: relative;
   width: max-content;
- 
+  overflow: hidden;
 }
 
 .me-auto a:link,
@@ -42,23 +42,34 @@
 .me-auto a::after {
   content: "";
   position: absolute;
-  height: 1.3px;
+  height: 1.5px;
   border-radius: 5px;
   width: 100%;
-  opacity: 0;
-  transform: translateX(-8px);
-  background: white;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  /* transform: translateX(-8px) translateY(-50px); */
+  background:#6a5acd;
   z-index: 100;
+}
+
+.me-auto a::before{
+  transform: translateX(-8px) translateY(-50px);
+}
+
+.me-auto a::after{
+  transform: translateX(-8px) translateY(50px);
 }
 
 
 
 .me-auto a:hover::before {
   opacity: 1;
+  transform: translateX(-8px) translateY(0px);
 }
 
 .me-auto a:hover::after {
   opacity: 1;
+  transform: translateX(-8px) translateY(0px);
 }
 
 
@@ -132,11 +143,16 @@
     align-items: center;
   }
 
-  .me-auto  a::after{
-    transform: translateX(0px);
+  .me-auto a:hover::before {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
   }
+  
+  .me-auto a:hover::after {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+  }
+  
 
-  .me-auto  a::before{
-    transform: translateX(0px);
-  }
+
 }

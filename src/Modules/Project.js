@@ -38,8 +38,7 @@ export default function Project() {
       const observerCallback = (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.transform = "scale(1)";
-            entry.target.style.opacity = "1";
+            entry.target.classList.add("show");
           }
         });
       };
@@ -55,6 +54,20 @@ export default function Project() {
     Animate();
   }, []);
   const projects = [
+    {
+      image:
+        "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_CA/games/switch/e/exploding-kittens-switch/hero",
+      altText: "Exploding Kitten Card Game",
+      title: "Exploding Kitten Card Game",
+      description:
+        " It is a single-player web-based game. It features a leaderboard, automatic game-saving, and dynamic card interactions, providing an engaging and interactive gaming experience.",
+      links: [
+        {
+          url: "https://kittenexplode.vercel.app/",
+          text: "Try it!",
+        },
+      ],
+    },
     {
       image:
         "https://www.lyyti.com/hs-fs/hubfs/1_Images/Blog/event-management-system.jpg?width=2000&name=event-management-system.jpg",

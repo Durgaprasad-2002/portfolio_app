@@ -79,3 +79,21 @@ body {
 .btn {
   margin-top: 10px;
 }
+
+
+
+/* -------------------------------------------------------------------------------------- */
+
+.show{
+  animation: op-show 0.5s linear forwards;
+}
+
+@keyframes op-show {
+  from{
+    transform: translateX(100px);
+    opacity: 0;
+  }to{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}

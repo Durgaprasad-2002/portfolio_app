@@ -4,6 +4,7 @@ body {
 }
 
 .Outer-APP {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
