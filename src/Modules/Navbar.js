@@ -9,31 +9,6 @@ function NAV() {
     settoggle((prevtoggle) => !prevtoggle);
   };
 
-  // var prevScrollpos = window.pageYOffset;
-  // window.onscroll = function () {
-  //   var currentScrollPos = window.pageYOffset;
-  //   if (prevScrollpos > currentScrollPos) {
-  //     document.getElementsByClassName("Outer-Nav")[0].style.top = "0";
-  //   } else {
-  //     document.getElementsByClassName("Outer-Nav")[0].style.top = "-80px";
-  //   }
-  //   prevScrollpos = currentScrollPos;
-  // };
-
-  // useEffect(() => {
-  //   document.querySelectorAll("#env").forEach((element) => {
-  //     element.addEventListener("click", function (e) {
-  //       document
-  //         .getElementsByClassName("navbar-toggler")[0]
-  //         .classList.toggle("collapsed");
-  //       document
-  //         .getElementsByClassName("navbar-collapse")[0]
-  //         .classList.toggle("show");
-  //       settoggle(false);
-  //     });
-  //   });
-  // });
-
   return (
     <div className="Outer-Nav">
       <Navbar id="nav" expand="md">

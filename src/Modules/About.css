@@ -12,8 +12,8 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: space-evenly;
+  align-items: self-end;
   padding: 10px;
 }
 
@@ -134,7 +134,7 @@
 
 .skill-card {
   transition: all 0.5s ease-in;
-  transform: scale(0.7);
+  transform: translateY(50px);
   opacity: 0;
 }
 .group {

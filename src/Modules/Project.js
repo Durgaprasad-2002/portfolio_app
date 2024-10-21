@@ -38,7 +38,7 @@ export default function Project() {
       const observerCallback = (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("show");
+            entry.target.classList.add("show-op");
           }
         });
       };
@@ -54,6 +54,20 @@ export default function Project() {
     Animate();
   }, []);
   const projects = [
+    {
+      image:
+        "https://d2vrvpw63099lz.cloudfront.net/do-i-need-a-chatbot/header-chat-box.png",
+      altText: "Chatbot Image",
+      title: "ChatBot Application",
+      description:
+        "Developed a chatbot interface that interacts with an LLM API, parses responses, allows users to save results, and includes an admin panel for managing saved data.",
+      links: [
+        {
+          url: "http://truechatbot.vercel.app/",
+          text: "Try it!",
+        },
+      ],
+    },
     {
       image:
         "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_CA/games/switch/e/exploding-kittens-switch/hero",

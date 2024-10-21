@@ -19,7 +19,7 @@ const About = () => {
       const observerCallback = (entries, observer) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.style.transform = "scale(1)";
+            entry.target.style.transform = "translateY(0px)";
             entry.target.style.opacity = "1";
           }
         });
@@ -58,7 +58,7 @@ const About = () => {
             <p>
               <h3> I'm Durga Prasad,</h3>{" "}
               <span className="light">
-                MERN Stack Developer and Design enthusiast
+                Full Stack MERN Developer and Design enthusiast.
               </span>
               <br />
               <br />
