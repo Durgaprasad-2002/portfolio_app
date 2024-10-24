@@ -71,10 +71,7 @@ const About = () => {
                   Resume <MdDownload />{" "}
                 </button>
               </a>
-              <a
-                href="https://www.linkedin.com/in/durgaprasadthota/"
-                target="new"
-              >
+              <a href="https://www.linkedin.com/in/durgaprasad31/" target="new">
                 <button className="btn btn-primary btn-md me-2">
                   LinkedIn
                 </button>
