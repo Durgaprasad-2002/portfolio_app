@@ -2,12 +2,11 @@ import React, { Suspense } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./About.css";
 import Resume from "./Images/VeeraVenkataSaiDurgaPrasadThota_Resume_updated.pdf";
-import img from "./Images/20MH1A04C3.jpg";
+import img from "./Images/dp.png";
 import { useEffect } from "react";
 import { MdDownload } from "react-icons/md";
 
 const About = () => {
-  const roles = ["MERN Stack Developer", "Programmer", "Designer"];
   useEffect(() => {
     function Animate() {
       const imgContainers = document.querySelectorAll(".skill-card");
@@ -55,31 +54,36 @@ const About = () => {
             </Suspense>
           </div>
           <div className="bio-container">
-            <p>
-              <h3> I'm Durga Prasad,</h3>{" "}
-              <span className="light">
-                Full Stack MERN Developer and Design enthusiast.
-              </span>
+            <div>
+              <h3> I'm Durga Prasad</h3>{" "}
+              <span className="light"> Full Stack Developer</span>
               <br />
               <br />
-              Passionate about Web Development, UI design, Programming. As a
-              fresher, I bring a unique perspective and a commitment to
-              continuous learning and improvement.
-              <br />
-              <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
-                <button className="btn btn-secondary btn-md me-2">
-                  Resume <MdDownload />{" "}
-                </button>
-              </a>
-              <a href="https://www.linkedin.com/in/durgaprasad31/" target="new">
-                <button className="btn btn-primary btn-md me-2">
-                  LinkedIn
-                </button>
-              </a>
-              <a href="https://github.com/Durgaprasad-2002" target="new">
-                <button className="btn btn-light">GitHub</button>
-              </a>
-            </p>
+              <p>
+                Passionate about Web Development, UI design, Programming. As a
+                fresher, I bring a unique perspective and a commitment to
+                continuous learning and improvement.
+              </p>
+              {/* <br /> */}
+              <div>
+                <a href={Resume} download="SaiDurgaPrasad_Resume.pdf">
+                  <button className="btn btn-secondary btn-md me-2">
+                    Resume <MdDownload />{" "}
+                  </button>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/durgaprasad31/"
+                  target="new"
+                >
+                  <button className="btn btn-primary btn-md me-2">
+                    LinkedIn
+                  </button>
+                </a>
+                <a href="https://github.com/Durgaprasad-2002" target="new">
+                  <button className="btn btn-light">GitHub</button>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

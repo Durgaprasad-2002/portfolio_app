@@ -86,12 +86,16 @@
   min-width: 300px;
   margin: 0 5px;
   padding: 15px 10px;
+  color: rgb(244, 241, 241);
+  text-align: left;
+}
+.bio-container > div {
+  padding-bottom: 10px;
 }
 
 .bio-container p {
   font-size: 17px;
-  color: rgb(244, 241, 241);
-  text-align: left;
+  margin-bottom: 0px;
 }
 
 .bio-container span {
@@ -114,7 +118,7 @@
 
 .SkillCardItems {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .edu-card,
