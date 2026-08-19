@@ -11,20 +11,46 @@ export default function About() {
   ];
 
   const skills = {
-    Frontend: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    Backend: ["Node.js", "NestJS", "Express", "GraphQL", "REST APIs"],
-    Databases: ["PostgreSQL", "Redis", "MongoDB", "Prisma"],
-    DevOps: ["Docker", "GitHub Actions", "Vercel", "Cloudflare", "AWS"],
+    Frontend: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+    ],
+    Backend: [
+      "Node.js",
+      "NestJS",
+      "Express",
+      "Java",
+      "Spring Boot",
+      "Spring Data JPA",
+      "GraphQL",
+      "REST APIs",
+    ],
+    Databases: ["PostgreSQL", "Redis", "MongoDB", "Prisma", "Typesense"],
+    DevOps: [
+      "Docker",
+      "Nginx",
+      "Git",
+      "CI/CD",
+      "DigitalOcean",
+      "Prometheus",
+      "Grafana",
+    ],
   };
 
-  const cardBgClass = theme === "light"
-    ? "bg-gray-50 border-gray-200"
-    : "bg-darker border-gray-800";
+  const cardBgClass =
+    theme === "light"
+      ? "bg-gray-50 border-gray-200"
+      : "bg-darker border-gray-800";
 
   const textClass = theme === "light" ? "text-gray-900" : "text-gray-100";
 
   return (
-    <section className={`py-16 sm:py-20 px-4 md:px-6 lg:px-8 ${theme === "light" ? "bg-gray-100" : ""}`}>
+    <section
+      className={`py-16 sm:py-20 px-4 md:px-6 lg:px-8 ${theme === "light" ? "bg-gray-100" : ""}`}
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,14 +59,18 @@ export default function About() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
-            theme === "light"
-              ? "bg-gradient-to-r from-gray-900 to-gray-600"
-              : "bg-gradient-to-r from-gray-100 to-gray-400"
-          } bg-clip-text text-transparent`}>
+          <h2
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
+              theme === "light"
+                ? "bg-gradient-to-r from-gray-900 to-gray-600"
+                : "bg-gradient-to-r from-gray-100 to-gray-400"
+            } bg-clip-text text-transparent`}
+          >
             About Me
           </h2>
-          <p className={`text-lg sm:text-xl ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}>
+          <p
+            className={`text-lg sm:text-xl ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}
+          >
             Full-Stack Engineer | Production-Scale Applications
           </p>
         </motion.div>
@@ -56,10 +86,14 @@ export default function About() {
               viewport={{ once: true }}
               className={`text-center p-6 rounded-lg border ${cardBgClass} transition-all hover:scale-105`}
             >
-              <div className={`text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-2`}>
+              <div
+                className={`text-2xl sm:text-3xl md:text-4xl font-bold text-accent mb-2`}
+              >
                 {stat.label}
               </div>
-              <div className={`text-sm sm:text-base ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}>
+              <div
+                className={`text-sm sm:text-base ${theme === "light" ? "text-gray-600" : "text-gray-400"}`}
+              >
                 {stat.value}
               </div>
             </motion.div>
@@ -109,11 +143,35 @@ export default function About() {
           viewport={{ once: true }}
           className={`mt-12 sm:mt-16 p-6 sm:p-8 rounded-lg border ${cardBgClass}`}
         >
-          <p className={`text-base sm:text-lg leading-relaxed ${
-            theme === "light" ? "text-gray-700" : "text-gray-300"
-          }`}>
-            I'm a Full-Stack Software Engineer with <strong>1.3+ years</strong> of professional experience building production-scale web applications. I specialize in modern web technologies including React, Next.js, Node.js, NestJS, and PostgreSQL. At <strong>InterviewBuddy</strong>, I've had the opportunity to work on features that serve <strong>15,000+ users</strong>, optimize performance, and implement complex system architectures.
-          </p>
+          <div
+            className={`text-base sm:text-lg leading-relaxed ${
+              theme === "light" ? "text-gray-700" : "text-gray-300"
+            }`}
+          >
+            <p>
+              Full-Stack Software Engineer with <strong>1.3+ years</strong>{" "}
+              building production web applications and scalable backend systems.
+              I design and ship end-to-end features using React, Next.js,
+              Node.js, NestJS, and TypeScript, and I build resilient Java
+              services with Spring Boot and Spring Data JPA.
+            </p>
+
+            <p className="mt-3">
+              I’ve worked on B2B and B2C platforms supporting{" "}
+              <strong>15,000+ users</strong>: improving Core Web Vitals,
+              implementing AI-driven interview services (WebSockets +
+              microservices), building transactional booking flows, and reducing
+              API latency via Redis-backed caching and background workers.
+            </p>
+
+            <p className="mt-3">
+              I enjoy designing modular systems, optimizing performance, and
+              deploying reliable services with Docker, CI/CD, and observability
+              (Prometheus/Grafana). I’m open to backend and full-stack roles
+              where I can apply system design, OOP, and real-time systems
+              experience.
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>

@@ -57,12 +57,9 @@ export default function Hero() {
               className={`px-3 sm:px-4 py-2 border border-accent text-accent rounded-full text-xs sm:text-sm font-mono ${
                 theme === "light" ? "bg-blue-50" : "bg-blue-950/20"
               }`}
-              whileHover={{
-                scale: 1.05,
-                backgroundColor: "rgba(59, 130, 246, 0.1)",
-              }}
+              whileHover={{ scale: 1.05 }}
             >
-              👨‍💻 Full-Stack Developer
+              Full-Stack Software Engineer
             </motion.span>
           </div>
         </motion.div>
@@ -84,7 +81,8 @@ export default function Hero() {
             theme === "light" ? "text-gray-600" : "text-gray-400"
           }`}
         >
-          Building Production-Scale Applications
+          Full-Stack Software Engineer • React · Next.js · Node.js · NestJS ·
+          Java · Spring Boot · PostgreSQL · TypeScript
         </motion.p>
 
         <motion.p
@@ -93,10 +91,9 @@ export default function Hero() {
             theme === "light" ? "text-gray-600" : "text-gray-500"
           } max-w-2xl mx-auto mb-8 sm:mb-12 leading-relaxed text-sm sm:text-base md:text-lg px-2 sm:px-0`}
         >
-          Full-Stack Engineer at InterviewBuddy • 1.3+ years • 15,000+ users
-          served
-          <br className="hidden sm:block" />
-          React • Next.js • Node.js • NestJS • PostgreSQL • Docker
+          Associate Software Engineer at InterviewBuddy • 1.3+ years
+          <br className="hidden sm:block" />I build production-scale web apps,
+          backend services, and real-time systems using modern stacks.
         </motion.p>
 
         <motion.div
@@ -194,16 +191,26 @@ export default function Hero() {
           <div className="space-y-4 text-sm sm:text-base text-left">
             <div>
               <h4 className="font-bold text-accent mb-2">Summary</h4>
-              <p
+              <div
                 className={
                   theme === "light" ? "text-gray-700" : "text-gray-300"
                 }
               >
-                Full-Stack Software Engineer with 1.3+ years of experience
-                developing production web applications and scalable backend
-                systems using React, Next.js, Node.js, NestJS, PostgreSQL,
-                Redis, Docker, and TypeScript.
-              </p>
+                <p>
+                  Full-Stack Software Engineer with 1.3+ years building
+                  production web applications and scalable backend systems. I
+                  design and ship end-to-end features using React, Next.js,
+                  Node.js, NestJS, and TypeScript, and build resilient Java
+                  services with Spring Boot and Spring Data JPA.
+                </p>
+                <p className="mt-2">
+                  I’ve worked on B2B and B2C platforms supporting 15,000+ users:
+                  improving Core Web Vitals, implementing AI-driven interview
+                  services (WebSockets + microservices), building transactional
+                  booking flows, and reducing API latency via Redis-backed
+                  caching and background workers.
+                </p>
+              </div>
             </div>
 
             <div>
@@ -237,9 +244,15 @@ export default function Hero() {
                 "Node.js",
                 "NestJS",
                 "TypeScript",
+                "Java",
+                "Spring Boot",
+                "Spring Data JPA",
                 "PostgreSQL",
+                "Redis",
                 "Docker",
-                "GraphQL",
+                "Prometheus",
+                "Grafana",
+                "Typesense",
               ].map((skill) => (
                 <span
                   key={skill}

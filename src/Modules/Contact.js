@@ -22,7 +22,7 @@ export default function Contact() {
     {
       label: "LinkedIn",
       value: "Durga Prasad Thota",
-      link: "https://linkedin.com/in/durgaprasad-thota",
+      link: "https://www.linkedin.com/in/durgaprasad31/",
       icon: "🔗",
       gradient: "from-blue-600 to-blue-400",
     },
@@ -56,9 +56,11 @@ export default function Contact() {
   };
 
   return (
-    <section className={`py-16 sm:py-20 px-4 md:px-6 lg:px-8 ${
-      theme === "light" ? "bg-white" : ""
-    }`}>
+    <section
+      className={`py-16 sm:py-20 px-4 md:px-6 lg:px-8 ${
+        theme === "light" ? "bg-white" : ""
+      }`}
+    >
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,16 +69,20 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
-            theme === "light"
-              ? "bg-gradient-to-r from-gray-900 to-gray-600"
-              : "bg-gradient-to-r from-gray-100 to-gray-400"
-          } bg-clip-text text-transparent`}>
+          <h2
+            className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
+              theme === "light"
+                ? "bg-gradient-to-r from-gray-900 to-gray-600"
+                : "bg-gradient-to-r from-gray-100 to-gray-400"
+            } bg-clip-text text-transparent`}
+          >
             Get in Touch
           </h2>
-          <p className={`text-lg sm:text-xl ${
-            theme === "light" ? "text-gray-600" : "text-gray-400"
-          }`}>
+          <p
+            className={`text-lg sm:text-xl ${
+              theme === "light" ? "text-gray-600" : "text-gray-400"
+            }`}
+          >
             Let's connect and build something amazing together
           </p>
         </motion.div>
@@ -114,18 +120,18 @@ export default function Contact() {
                 >
                   {contact.icon}
                 </motion.div>
-                <h3 className={`text-lg sm:text-xl font-bold mb-2 ${
-                  theme === "light"
-                    ? "text-gray-900"
-                    : "text-gray-100"
-                }`}>
+                <h3
+                  className={`text-lg sm:text-xl font-bold mb-2 ${
+                    theme === "light" ? "text-gray-900" : "text-gray-100"
+                  }`}
+                >
                   {contact.label}
                 </h3>
-                <p className={`text-xs sm:text-sm ${
-                  theme === "light"
-                    ? "text-gray-600"
-                    : "text-gray-400"
-                } break-all`}>
+                <p
+                  className={`text-xs sm:text-sm ${
+                    theme === "light" ? "text-gray-600" : "text-gray-400"
+                  } break-all`}
+                >
                   {contact.value}
                 </p>
               </div>
@@ -144,11 +150,12 @@ export default function Contact() {
           } space-y-2`}
         >
           <p>
-            Crafted with <span className="text-accent">React</span> • <span className="text-accent">Next.js</span> • <span className="text-accent">Tailwind</span> • <span className="text-accent">Framer Motion</span>
+            Crafted with <span className="text-accent">React</span> •{" "}
+            <span className="text-accent">Next.js</span> •{" "}
+            <span className="text-accent">Tailwind</span> •{" "}
+            <span className="text-accent">Framer Motion</span>
           </p>
-          <p>
-            © 2025 Durga Prasad Thota. All rights reserved.
-          </p>
+          <p>© 2025 Durga Prasad Thota. All rights reserved.</p>
         </motion.div>
       </div>
     </section>
