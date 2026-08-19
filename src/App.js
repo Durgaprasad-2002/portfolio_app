@@ -1,32 +1,23 @@
-import "./App.css";
-
-import Loader from "./Loader";
-
-import { Suspense } from "react";
-import { lazy } from "react";
-
-const Navbar_ = lazy(() => import("./Modules/Navbar"));
-const About = lazy(() => import("./Modules/About"));
-const Project = lazy(() => import("./Modules/Project"));
-const Coding = lazy(() => import("./Modules/Coding"));
-const Contact = lazy(() => import("./Modules/Contact"));
+import Navbar from "./Modules/Navbar";
+import Hero from "./Modules/Hero";
+import About from "./Modules/About";
+import Experience from "./Modules/Experience";
+import Projects from "./Modules/Projects";
+import Contact from "./Modules/Contact";
 
 function App() {
   return (
-    <Suspense fallback={<Loader />}>
-      <div className="App" id="#">
-        <Navbar_ />
-        <div className="Outer-APP">
-          <div style={{ maxWidth: "1400px" }}>
-            <About />
-            <Coding />
-            <Project />
-            <Contact />
-          </div>
-        </div>
-        {/* <Loader /> */}
-      </div>
-    </Suspense>
+    <div className="bg-dark min-h-screen text-gray-200">
+      <Navbar />
+      <main className="max-w-4xl mx-auto px-4 py-20 md:px-8">
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Contact />
+      </main>
+    </div>
   );
 }
+
 export default App;

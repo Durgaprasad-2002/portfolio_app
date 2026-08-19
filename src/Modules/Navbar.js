@@ -1,85 +1,61 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Navbar.css";
-import { Nav, Navbar, Container, NavDropdown } from "react-bootstrap";
 import { useState, useEffect } from "react";
-function NAV() {
-  const [toggle, settoggle] = useState(false);
+import { motion } from "framer-motion";
 
-  const HandleToggle = () => {
-    settoggle((prevtoggle) => !prevtoggle);
+export default function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <div className="Outer-Nav">
-      <Navbar id="nav" expand="md">
-        <Container>
-          <Navbar.Brand id="brand">
-            <div id="d1"></div>
-            <div id="d2"></div>
-          </Navbar.Brand>
+    <motion.nav
+      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+        scrolled ? "bg-darker border-b border-gray-800" : "bg-transparent"
+      }`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="max-w-4xl mx-auto px-4 py-4 md:px-8 flex justify-between items-center">
+        <motion.div
+          className="text-xl font-bold text-accent"
+          whileHover={{ scale: 1.05 }}
+        >
+          &lt;DP /&gt;
+        </motion.div>
 
-          <Navbar.Toggle
-            onClick={HandleToggle}
-            id="toggle"
-            aria-controls="basic-navbar-nav"
-          >
-            <div className="outer">
-              <div
-                className="inner"
-                style={{
-                  rotate: `${toggle ? "45deg" : "0deg"}`,
-                  marginTop: `${toggle ? "10px" : "0px"}`,
-                }}
-              ></div>
-              <div
-                className="inner"
-                style={{
-                  width: "21px",
-                  height: "1.5px",
-                  opacity: `${toggle ? "0" : "1"}`,
-                  marginTop: "-0.5px",
-                }}
-              ></div>
-              <div
-                className="inner"
-                style={{
-                  width: `${toggle ? "30px" : "12px"}`,
-                  rotate: `${toggle ? "-45deg" : "0deg"}`,
-                  marginTop: `${toggle ? "-13px" : "0px"}`,
-                }}
-              ></div>
-            </div>
-          </Navbar.Toggle>
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link id="env" href="#about">
-                About
-                <br />
-                <span id="div"></span>
-              </Nav.Link>
+        <div className="hidden md:flex gap-8">
+          {["about", "experience", "projects", "contact"].map((item) => (
+            <motion.button
+              key={item}
+              onClick={() => scrollToSection(item)}
+              className="text-sm text-gray-300 hover:text-accent transition-colors capitalize"
+              whileHover={{ scale: 1.05 }}
+            >
+              {item}
+            </motion.button>
+          ))}
+        </div>
 
-              <Nav.Link id="env" href="#projects">
-                Projects
-                <br />
-                <span id="div"></span>
-              </Nav.Link>
-
-              <Nav.Link id="env" href="#coding-profiles">
-                coding profiles
-                <br />
-                <span id="div"></span>
-              </Nav.Link>
-
-              <Nav.Link id="env" href="#skills">
-                Skills
-                <br />
-                <span id="div"></span>
-              </Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </div>
+        <motion.a
+          href="mailto:prasaddurga2031@gmail.com"
+          className="text-accent text-sm border border-accent px-4 py-2 rounded hover:bg-accent hover:text-dark transition-all"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          Contact
+        </motion.a>
+      </div>
+    </motion.nav>
   );
 }
-export default NAV;

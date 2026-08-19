@@ -1,91 +1,68 @@
-import React from "react";
-import "./Contact.css";
-import Navbar_ from "./Navbar";
-import {
-  BsLinkedin,
-  BsGithub,
-  BsFacebook,
-  BsTwitter,
-  BsWhatsapp,
-} from "react-icons/bs";
-import { FiMail } from "react-icons/fi";
-import { useState,useEffect } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
+  const contacts = [
+    {
+      label: "Email",
+      value: "prasaddurga2031@gmail.com",
+      href: "mailto:prasaddurga2031@gmail.com",
+      icon: "📧",
+    },
+    {
+      label: "WhatsApp",
+      value: "+91 9177943677",
+      href: "https://wa.me/919177943677",
+      icon: "💬",
+    },
+    {
+      label: "LinkedIn",
+      value: "durgaprasad31",
+      href: "https://www.linkedin.com/in/durgaprasad31/",
+      icon: "🔗",
+    },
+    {
+      label: "GitHub",
+      value: "Durgaprasad-2002",
+      href: "https://github.com/Durgaprasad-2002",
+      icon: "💻",
+    },
+  ];
 
-  const [show, setShow] = useState(false);
-  const [prevScroll, setPrevScroll] = useState(0);
-
-  // const ScrollTrigger = () => {
-  //   let scrollHeight = document.documentElement.scrollTop;
-
-  //   if (scrollHeight > prevScroll && scrollHeight > 200) {
-  //     setShow(true);
-  //   } else {
-  //     setShow(false);
-  //   }
-
-  //   setPrevScroll(scrollHeight);
-  // };
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', ScrollTrigger);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', ScrollTrigger);
-  //   };
-  // }, [prevScroll]);
-
-  function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
   return (
-    <>
-      <button className="back-btn" onClick={topFunction} style={{display:`${show?'block':'none'}`}}>
-                  ↿ Top 
-      </button>
-      <div className="container-fluid">
-        <div id="Footer">
-          <div className="row">
-            <div className="col-md-6">
-              <p className="copy">
-                <b> My Social Info</b>
-                
-              </p>
-            </div>
-            <div className="col-md-6">
-              <div className="digiAccounts">
-                <a
-                  href="https://www.linkedin.com/in/durgaprasadthota/"
-                  target="new"
-                >
-                  {" "}
-                  <BsLinkedin className="accs" style={{ color: "#0077B5" }} />
-                </a>
+    <section id="contact" className="py-20 border-t border-gray-800">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+      >
+        <h2 className="text-3xl font-bold mb-8">Get in Touch</h2>
+        <p className="text-gray-400 mb-12 max-w-2xl">
+          I'm always interested in hearing about new projects and opportunities.
+          Feel free to reach out via email or WhatsApp!
+        </p>
 
-                <a href="https://github.com/Durgaprasad-2002" target="new">
-                  {" "}
-                  <BsGithub className="accs" />
-                </a>
-
-                <a href="https://wa.me/9177943677?text=Hello" target="new">
-                  {" "}
-                  <BsWhatsapp
-                    className="accs"
-                    style={{ color: "lightgreen" }}
-                  />
-                </a>
-
-                <a href="mailto:prasaddurga2031@gmail.com" target="new">
-                  {" "}
-                  <FiMail className="accs" style={{ color: "#d4d1d1" }} />
-                </a>
-              </div>
-            </div>
-          </div>
+        <div className="grid md:grid-cols-2 gap-6">
+          {contacts.map((contact, idx) => (
+            <motion.a
+              key={idx}
+              href={contact.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-6 bg-darker rounded border border-gray-800 hover:border-accent transition-all"
+              whileHover={{ scale: 1.02, y: -4 }}
+            >
+              <div className="text-2xl mb-3">{contact.icon}</div>
+              <div className="text-sm text-gray-500 mb-1">{contact.label}</div>
+              <div className="text-accent font-semibold">{contact.value}</div>
+            </motion.a>
+          ))}
         </div>
-      </div>
-    </>
+
+        <div className="mt-20 pt-12 border-t border-gray-800 text-center text-gray-500">
+          <p>© 2024 Durga Prasad. All rights reserved.</p>
+        </div>
+      </motion.div>
+    </section>
   );
 }

@@ -43,6 +43,10 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0"
+    "autoprefixer": "^10.5.4",
+    "framer-motion": "^13.1.0",
+    "gh-pages": "^5.0.0",
+    "postcss": "^8.5.26",
+    "tailwindcss": "^3.4.19"
   }
 }
