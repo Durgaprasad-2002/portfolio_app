@@ -1,225 +1,149 @@
-import React from "react";
-import "./Project.css";
-import { useEffect } from "react";
+import { motion } from "framer-motion";
+import { useTheme } from "../ThemeContext";
 
-function ProjectCard({ image, altText, title, description, links }) {
-  return (
-    <div className="project-card">
-      <img className="card-img-top" src={image} alt={altText} />
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
-        <p className="card-text">{description}</p>
-        <div className="button-container">
-          {links.map((link, index) => (
-            <a
-              key={index}
-              href={link.url}
-              target="new"
-              className="btn btn-light btn-sm m-1"
-            >
-              {link.text}
-            </a>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
+export default function Projects() {
+  const { theme } = useTheme();
 
-export default function Project() {
-  useEffect(() => {
-    function Animate() {
-      const imgContainers = document.querySelectorAll(".project-card");
-
-      const observerOptions = {
-        threshold: 0.1, // Adjust this threshold as needed
-      };
-
-      const observerCallback = (entries, observer) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("show-op");
-          }
-        });
-      };
-
-      const observer = new IntersectionObserver(
-        observerCallback,
-        observerOptions
-      );
-
-      imgContainers.forEach((container) => observer.observe(container));
-    }
-
-    Animate();
-  }, []);
   const projects = [
     {
-      image:
-        "https://d2vrvpw63099lz.cloudfront.net/do-i-need-a-chatbot/header-chat-box.png",
-      altText: "Chatbot Image",
-      title: "ChatBot Application",
-      description:
-        "Developed a chatbot interface that interacts with an LLM API, parses responses, allows users to save results, and includes an admin panel for managing saved data.",
-      links: [
-        {
-          url: "http://truechatbot.vercel.app/",
-          text: "Try it!",
-        },
+      title: "InterviewBuddy B2C Platform",
+      subtitle: "AI-Powered Interview Preparation",
+      badge: "15,000+ Users",
+      features: [
+        "Dynamic Pricing Strategy",
+        "Razorpay Payment Gateway",
+        "Typesense Full-Text Search",
+        "90+ Lighthouse Score",
       ],
+      tech: ["React", "Next.js", "Node.js", "PostgreSQL", "Redis", "Razorpay", "Typesense"],
     },
     {
-      image:
-        "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_930/b_white/f_auto/q_auto/ncom/en_CA/games/switch/e/exploding-kittens-switch/hero",
-      altText: "Exploding Kitten Card Game",
-      title: "Exploding Kitten Card Game",
-      description:
-        " It is a single-player web-based game. It features a leaderboard, automatic game-saving, and dynamic card interactions, providing an engaging and interactive gaming experience.",
-      links: [
-        {
-          url: "https://kittenexplode.vercel.app/",
-          text: "Try it!",
-        },
+      title: "Collaborative Terminal",
+      subtitle: "Real-time Pair Programming",
+      badge: "Open Source",
+      features: [
+        "Real-time WebSocket Sync",
+        "node-pty Terminal Emulation",
+        "Cloudflare Tunnel Integration",
+        "Multi-user Sessions",
       ],
-    },
-    {
-      image:
-        "https://www.lyyti.com/hs-fs/hubfs/1_Images/Blog/event-management-system.jpg?width=2000&name=event-management-system.jpg",
-      altText: "Event Management",
-      title: "Event Management",
-      description:
-        "Developed dynamic React-based web app integrating with Google Calendar API for CRUD operations, featuring secure Google Auth login.",
-      links: [
-        {
-          url: "https://eventmanage-app.vercel.app/",
-          text: "Try it!",
-        },
-      ],
-    },
-    {
-      image: "https://kinsta.com/wp-content/uploads/2018/05/what-is-dns.png",
-      altText: "DNS Management Tool",
-      title: "DNS Management Tool",
-      description:
-        "Developed a robust DNS management tool designed to handle DNS configurations with features comparable to AWS Route 53.",
-      links: [
-        {
-          url: "https://dns-guru.vercel.app/",
-          text: "Try it!",
-        },
-      ],
-    },
-
-    {
-      image:
-        "https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/01/url-shortener.jpg",
-      altText: "TinyIt",
-      title: "TinyIt",
-      description:
-        "Created TinyIt, a tool to convert long URLs into short, shareable links with aliases and analytics.",
-      links: [{ url: "https://tinyit.vercel.app/", text: "Try it!" }],
-    },
-    {
-      image: "https://blog.dktcdn.net/files/blog-la-gi-3.png",
-      altText: "Blog Website",
-      title: "Blog Website",
-      description:
-        "This project is a full-stack blog application with user authentication, blog creation, and commenting features, built using Express.js and MongoDB.",
-      links: [
-        { url: "https://blogify-app-kqxx.onrender.com/", text: "Try it!" },
-      ],
-    },
-
-    {
-      image:
-        "https://www.shutterstock.com/image-vector/car-sharing-online-application-concept-600nw-1898241121.jpg",
-      altText: "Car Rental Application",
-      title: "Car Rental Application",
-      description:
-        "Developed using Bootstrap, React Js, Node Js, MongoDB and allows the user to manage Car bookings.",
-      links: [
-        {
-          url: "https://durgaprasad-2002.github.io/Client_Car/",
-          text: "Try it!",
-        },
-      ],
-    },
-    {
-      image:
-        "https://images.marketpath.com/9dda7041-2870-4a96-bf1e-dd8342e86e7c/image/83401e05-762f-4dae-9b16-c27ecd1df6fd/importexport_summary.png",
-      altText: "STAAR Exports & Imports",
-      title: "STAAR Exports & Imports ",
-      description:
-        "Spearheaded the creation of an innovative E-Commerce website, facilitating seamless international trade with a sophisticated email notification system.",
-      links: [{ url: "https://staarfoods.com/", text: "Try it!" }],
-    },
-    {
-      image:
-        "https://lawacademybhopal.com/wp-content/uploads/2024/02/mba-after-law-llb.jpg",
-      altText: "Legis Code",
-      title: "Legis Code ",
-      description:
-        "A comprehensive platform for legal practitioners, featuring a categorized repository of laws.",
-      links: [{ url: "https://legiscode.vercel.app/", text: "Try it!" }],
-    },
-
-    {
-      image:
-        "https://www.emedstore.in/images/servicepage/hospital-app-website-development.png?version=1.1",
-      altText: "Hospital Management Application",
-      title: "Hospital Management",
-      description:
-        "Developed using Bootstrap, JavaScript, React Js, Node Js, MongoDB Cluster.",
-      links: [
-        {
-          url: "https://github.com/Durgaprasad-2002/ApolloShineProject",
-          text: "Source Code",
-        },
-      ],
-    },
-    {
-      image: "https://www.hotstats.com/hubfs/hotel_restaurant_waiter-1.jpeg",
-      altText: "Restaurant Application",
-      title: "Restaurant Application",
-      description:
-        "This Java console-based task management system simplifies organization and boosts productivity.",
-      links: [
-        {
-          url: "https://github.com/Durgaprasad-2002/HeroViredTask3",
-          text: "Source Code",
-        },
-      ],
-    },
-    {
-      image:
-        "https://www.designer-daily.com/wp-content/uploads/2020/03/web-dev-business.jpg",
-      altText: "Minor Projects",
-      title: "Minor Projects",
-      description:
-        "Developed various basic web applications using HTML, CSS, JavaScript, React Js, NodeJs, MongoDB.",
-      links: [
-        { url: "https://github.com/Durgaprasad-2002/", text: "Source Codes" },
-      ],
+      tech: ["Node.js", "WebSocket", "React", "SSH", "Deploy"],
     },
   ];
 
+  const cardBgClass = theme === "light"
+    ? "bg-gray-50 border-gray-200"
+    : "bg-darker border-gray-800";
+
+  const textClass = theme === "light" ? "text-gray-900" : "text-gray-100";
+  const mutedTextClass = theme === "light" ? "text-gray-600" : "text-gray-400";
+
   return (
-    <div className="project-container">
-      <div className="Prow1" id="projects">
-        <h2 style={{ marginLeft: "-15px" }}>Projects</h2>
+    <section className={`py-16 sm:py-20 px-4 md:px-6 lg:px-8 ${theme === "light" ? "bg-gray-100" : ""}`}>
+      <div className="max-w-6xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-12 sm:mb-16"
+        >
+          <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold mb-4 ${
+            theme === "light"
+              ? "bg-gradient-to-r from-gray-900 to-gray-600"
+              : "bg-gradient-to-r from-gray-100 to-gray-400"
+          } bg-clip-text text-transparent`}>
+            Featured Projects
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+          {projects.map((project, idx) => (
+            <motion.div
+              key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.1 }}
+              viewport={{ once: true }}
+              className={`relative p-6 sm:p-8 rounded-lg border ${cardBgClass} group overflow-hidden h-full`}
+            >
+              {/* Gradient overlay on hover */}
+              <motion.div
+                className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity -z-10"
+                layoutId={`proj-${idx}`}
+              />
+
+              <div className="flex justify-between items-start gap-3 mb-4">
+                <div className="flex-1">
+                  <h3 className={`text-xl sm:text-2xl font-bold ${textClass} mb-1`}>
+                    {project.title}
+                  </h3>
+                  <p className={`text-sm sm:text-base ${mutedTextClass}`}>
+                    {project.subtitle}
+                  </p>
+                </div>
+                {project.badge && (
+                  <motion.span
+                    className={`px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap ${
+                      theme === "light"
+                        ? "bg-accent/10 text-accent border border-accent/20"
+                        : "bg-accent/20 text-accent border border-accent/30"
+                    }`}
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    {project.badge}
+                  </motion.span>
+                )}
+              </div>
+
+              {/* Features Grid */}
+              <div className="grid grid-cols-2 gap-3 mb-6">
+                {project.features.map((feature, fIdx) => (
+                  <motion.div
+                    key={fIdx}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, delay: fIdx * 0.05 }}
+                    viewport={{ once: true }}
+                    className={`text-xs sm:text-sm p-3 rounded border ${
+                      theme === "light"
+                        ? "bg-white border-gray-300 text-gray-700"
+                        : "bg-gray-900 border-gray-700 text-gray-300"
+                    }`}
+                  >
+                    ✨ {feature}
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Tech Stack */}
+              <div className="space-y-2">
+                <p className={`text-xs sm:text-sm font-semibold ${mutedTextClass}`}>
+                  Tech Stack
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {project.tech.map((tech, tIdx) => (
+                    <motion.span
+                      key={tech}
+                      initial={{ opacity: 0, scale: 0.8 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.3, delay: tIdx * 0.02 }}
+                      viewport={{ once: true }}
+                      className={`text-xs px-2.5 py-1.5 rounded border ${
+                        theme === "light"
+                          ? "bg-gray-200 text-gray-800 border-gray-300"
+                          : "bg-gray-800 text-gray-200 border-gray-700"
+                      } hover:text-accent hover:border-accent transition-colors`}
+                    >
+                      {tech}
+                    </motion.span>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-      <div className="project-content">
-        {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            image={project.image}
-            altText={project.altText}
-            title={project.title}
-            description={project.description}
-            links={project.links}
-          />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 }
